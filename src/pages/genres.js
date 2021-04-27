@@ -8,10 +8,10 @@ const GenrePage = () => (
   <Layout>
     <SEO title="Choose genre" />
     <h1>Choose a genre.</h1>
-    <p><Link to="randb.js">R&B</Link></p>
-    <p><Link to="prohouse.js">Progressive House</Link></p>
-    <p><Link to="latin.js">Latin</Link></p>
-    <p><Link to="chill.js">Chill</Link></p>
+    <p><Link to="genres/randb.js">R&B</Link></p>
+    <p><Link to="genres/prohouse.js">Progressive House</Link></p>
+    <p><Link to="genres/latin.js">Latin</Link></p>
+    <p><Link to="genres/chill.js">Chill</Link></p>
   </Layout>
 )
 

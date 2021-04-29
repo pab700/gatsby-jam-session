@@ -8,11 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>wilkommen zur <br/><em>jam session</em></h1>
-    <h2>Musiktheorie interaktiv verstehen.</h2>
-    <p>
-      <Link to="genres.js">weiter</Link> 
-    </p>
+    <section class="startseite">
+    <h2>willkommen zur</h2>
+    <h1>Jam Session</h1>
+    <div class="intro"><h3>Musiktheorie interaktiv verstehen.</h3></div>
+    <div class="startseite_weiter"></div><p><Link href="genres.js">weiter</Link> </p>
+    </section>
   </Layout>
 )
 

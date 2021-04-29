@@ -6,12 +6,18 @@ import SEO from "../components/seo"
 
 const GenrePage = () => (
   <Layout>
-    <SEO title="Choose genre" />
-    <h1>Choose a genre.</h1>
-    <p><Link to="randb.js">R&B</Link></p>
-    <p><Link to="prohouse.js">Progressive House</Link></p>
-    <p><Link to="latin.js">Latin</Link></p>
-    <p><Link to="chill.js">Chill</Link></p>
+    <SEO title="Genre wählen" />
+    <section class="genreseite">
+    <h1>Wähle dein Genre!</h1>
+    <div class="genre_auswahl">
+    <ul>
+    <li><Link to="randb.js">R&B</Link></li>
+    <li><Link to="prohouse.js">Progressive House</Link></li>
+    <li><Link to="latin.js">Latin</Link></li>
+    <li><Link to="chill.js">Chill</Link></li>
+    </ul>
+    </div>
+    </section>
   </Layout>
 )
 

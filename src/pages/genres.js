@@ -11,10 +11,10 @@ const GenrePage = () => (
     <h1>Wähle dein Genre!</h1>
     <div class="genre_auswahl">
     <ul>
-    <li><Link to="randb.js">R&B</Link></li>
-    <li><Link to="prohouse.js">Progressive House</Link></li>
-    <li><Link to="latin.js">Latin</Link></li>
-    <li><Link to="chill.js">Chill</Link></li>
+    <li><Link to="/hiphop/">Hip Hop</Link></li>
+    <li><Link to="/lofi/">Lofi</Link></li>
+    <li><Link to="/soul/">Soul</Link></li>
+    <li><Link to="/elektro/">Elektro</Link></li>
     </ul>
     </div>
     </section>

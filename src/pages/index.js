@@ -12,7 +12,7 @@ const IndexPage = () => (
     <h2>willkommen zur</h2>
     <h1>Jam Session</h1>
     <div class="intro"><h3>Musiktheorie interaktiv verstehen.</h3></div>
-    <div class="startseite_weiter"></div><p><Link to="genres">weiter</Link></li> </p>
+    <div class="startseite_weiter"></div><p><Link to="/genres/">weiter</Link></li> </p>
     </section>
   </Layout>
 )

@@ -4,11 +4,13 @@ import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-const RandBPage = () => (
+const SpulPage = () => (
   <Layout>
-    <SEO title="Choose genre" />
-    <h1>R&B.</h1>
+    <SEO title="Soul | JAMsession" />
+    <section class="hauptseiten">
+      
+    </section>
   </Layout>
 )
 
-export default RandBPage
+export default SoulPage

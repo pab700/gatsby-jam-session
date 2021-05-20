@@ -9,18 +9,28 @@ const HiphopPage = () => (
     <SEO title="Hip-Hop | JAMsession" />
     <section class="hauptseiten">
     <h1>Hip-Hop</h1>
-    <div class="genre_dropdown">
-    <label for="genres">Genre wechseln</label>
 
-      <select name="genres" id="genres">
-        <option value="hiphop">Hip-Hop</option>
-        <option value="lofi">LoFi</option>
-        <option value="soul">Soul</option>
-        <option value="elektro">Elektro</option>
-      </select> 
-    </div> 
-    </section>
+    <div class="topnav" id="myTopnav">
+      <div class="dropdown">
+        <button class="dropbtn">GENRE WECHSELN 
+        <i class="fa fa-caret-down"></i>
+    </button>
+        <div class="dropdown-content">
+          <Link to="/genres/lofi/">LoFi</Link>
+          <Link to="/genres/soul/">Soul</Link>
+          <Link to="/genres/elektro/">Elektro</Link>
+        </div>
+      </div> 
+  </div>
+
+  <div class="lernlink">
+    <Link to="/lernecke/elektrolernecke/">LERNECKE</Link>
+  </div>
+
+  </section>
+
   </Layout>
+
 )
 
 export default HiphopPage

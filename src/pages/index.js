@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
+  <div class="index">
   <Layout>
     <SEO title="Home" />
     <section class="startseite">
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <div class="startseite_weiter"></div><p><Link to="/genres/">weiter</Link> </p>
     </section>
   </Layout>
+  </div>
 )
 
 export default IndexPage

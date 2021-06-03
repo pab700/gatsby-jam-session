@@ -7,13 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: montserrat;
-
-  
 }
 
 
-/* || Startseite */
-.index{
+.yellowbg{
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 1024px;
@@ -30,18 +27,19 @@
   background-image: linear-gradient(to left top, #8e8171, #9e917f, #aea18c, #beb19b, #cec2a9, #d4c8ad, #dacdb0, #e0d3b4, #ddcead, #dacaa7, #d8c5a0, #d5c09a);
 }
 
+/* || Startseite */
 .startseite{
   text-align: center;
   text-transform: uppercase;
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
-.intro{
-  margin-top: 80px;
-}
 
-.startseite_weiter{
+.startseite #weiterbtn{
   margin-top: 120px;
+  font-weight: 800;
+  font-size: 3rem;
+  transition: transform .3s;
 }
 
 .startseite h1{
@@ -59,34 +57,18 @@
   font-weight: 300;
   font-size: 2rem;
   text-transform:initial;
+  margin-top: 80px;
+  
 }
 
-.startseite p{
-  font-weight: 800;
-  font-size: 3rem;
+.startseite #weiterbtn:hover{
+  transform: scale(1.5);
 }
 
 /* || Startseite */
-.genre{
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  background-image: linear-gradient(to left top, #8e8171, #9e917f, #aea18c, #beb19b, #cec2a9, #d4c8ad, #dacdb0, #e0d3b4, #ddcead, #dacaa7, #d8c5a0, #d5c09a);
-}
-
 .genreseite{
   text-align: center;
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 .genreseite h1{
@@ -109,7 +91,16 @@
   padding: 0px 60px;
 }
 
-.genre_auswahl li:hover a { background: #FFF; }
+.genre_auswahl #red:hover a { background-color: rgba(231, 76, 60, 0.5);  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;}
+.genre_auswahl #yellow:hover a { background-color: rgba(241, 196, 15, 0.5);  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
+.genre_auswahl #blue:hover a { background-color: rgba(52, 152, 219, 0.5);  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
+.genre_auswahl #green:hover a { background-color: rgba(39, 174, 96, 0.5);  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;  }
+
+
 
 
 a:link { text-decoration: none; -moz-osx-font-smoothing: grayscale;
@@ -121,19 +112,48 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);}
 
 
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
+  .hauptseiten {
+    width: 100%;
+    position: relative;
+    height: 100vh;
   }
-  
+
+  .hauptseiten .titel h1{
+    font-weight: 1000;
+    font-size: 5rem;
+  }
+
+  .hauptseiten .titel h2{
+    margin-top: 10%;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+
+  .header{
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 48px;
+  }
+
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 2rem;
+  }
+
+  .lernlink{
+    font-size: 2rem;
+    font-weight: 800;
   }
   
   .active {
@@ -151,44 +171,134 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   }
   
   .dropdown .dropbtn {
-    font-size: 17px;    
+    font-size: 2rem;
+    font-weight: 800;
     border: none;
     outline: none;
-    color: white;
-    padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
-    margin: 0;
   }
   
+
+
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color:inherit;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
   }
   
   .dropdown-content a {
     float: none;
-    color: black;
-    padding: 12px 16px;
+    padding: 8px 0px;
     text-decoration: none;
     display: block;
     text-align: left;
+    font-size: 1,8rem;
+    font-weight: 700;
   }
-  
-  .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
-    color: white;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  #Lofidropdown:hover{
+    background-color: rgba(52, 152, 219, 0.5);  -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+
+  #Souldropdown:hover{
+    background-color: rgba(241, 196, 15, 0.5);  -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+
+  #Elektrodropdown:hover{
+    background-color: rgba(39, 174, 96, 0.5);  -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+
+  #Hip-Hopdropdown:hover{
+    background-color: rgba(231, 76, 60, 0.5);  -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  .main-buttons_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .container1, .container2, .container3, .container4 {
+    width: 25vw;
+    
+  }
+
+  .container1 {
+    margin-right: 8px;
+  }
+
+  .container2, .container3 {
+    margin: 0px 8px;
+  }
+
+  .container4 {
+    margin-left: 8px;
+  }
+
+  .rhap_container {
+    outline: none;
+    height: 500px;
+    background-color: #66caa5;
+  }
+
+  .rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button {
+    color: #ff21b5;
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .rhap_main-controls svg {
+    width: 5em;
+    height: 5em;
+  }
+
+  .rhap_button-clear.rhap_repeat-button{
+    color: #ff21b5;
+  }
+
+  .rhap_button-clear.rhap_volume-button{
+    color: #ff21b5;
+  }
+
+  .rhap_volume-indicator{
+    background-color: #ff21b5;
+  }
+
+  .rhap_progress-section {
+    justify-content: center;
+}
+
+.rhap_button-clear.rhap_volume-button{
+  width: 2em;
+  height: auto;
+}
+
+.rhap_volume-button {
+  flex: 0 0 2em;
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: #868686;
+  margin-right: 6px;
+}
+
+.rhap_button-clear.rhap_volume-button svg{
+  width: 2em;
+  height: auto;
+}
+
+  .rhap_volume-filled{
+    background-color: #ff21b5;
   }

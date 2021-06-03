@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `JAMsession`,
+    title: `JAM SESSION`,
     description: `Learn music theory in a playful way.`,
     author: `@gatsbyjs`,
   },

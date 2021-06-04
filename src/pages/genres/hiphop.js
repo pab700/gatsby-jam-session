@@ -49,13 +49,14 @@ const HiphopPage = () => (
           loop={true}
           volume={0.35}
           showFilledVolume={true}
-          showJumpControls={false}
+          progressJumpStep={
+            60000
+          }
           customProgressBarSection={
             [
-              RHAP_UI.VOLUME,
-              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.VOLUME,   
               RHAP_UI.LOOP,  
-              <p style={{marginRight:50}}></p>,  
+              <p style={{marginRight:20}}></p>, 
               RHAP_UI.CURRENT_LEFT_TIME,  
             ]
           }
@@ -75,13 +76,14 @@ const HiphopPage = () => (
           loop={true}
           volume={0.35}
           showFilledVolume={true}
-          showJumpControls={false}
+          progressJumpStep={
+            60000
+          }
           customProgressBarSection={
             [
-              RHAP_UI.VOLUME,
-              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.VOLUME,   
               RHAP_UI.LOOP,  
-              <p style={{marginRight:50}}></p>,  
+              <p style={{marginRight:20}}></p>, 
               RHAP_UI.CURRENT_LEFT_TIME,  
             ]
           }
@@ -101,13 +103,14 @@ const HiphopPage = () => (
           loop={true}
           volume={0.35}
           showFilledVolume={true}
-          showJumpControls={false}
+          progressJumpStep={
+            60000
+          }
           customProgressBarSection={
             [
-              RHAP_UI.VOLUME,
-              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.VOLUME,   
               RHAP_UI.LOOP,  
-              <p style={{marginRight:50}}></p>,  
+              <p style={{marginRight:20}}></p>, 
               RHAP_UI.CURRENT_LEFT_TIME,  
             ]
           }
@@ -127,12 +130,14 @@ const HiphopPage = () => (
           volume={0.35}
           showFilledVolume={true}
           showJumpControls={false}
+          progressJumpStep={
+            60000
+          }
           customProgressBarSection={
             [
-              RHAP_UI.VOLUME,
-              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.VOLUME,  
               RHAP_UI.LOOP,  
-              <p style={{marginRight:50}}></p>,  
+              <p style={{marginRight:20}}></p>,  
               RHAP_UI.CURRENT_LEFT_TIME,  
             ]
           }

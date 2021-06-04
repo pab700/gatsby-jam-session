@@ -356,27 +356,54 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     margin-bottom: 50px;
   }
 
+  .rhap_controls-section {
+    margin-right: 3em;
+  }
+  
+  .rhap_button-clear.rhap_main-controls-button.rhap_rewind-button {
+    color: hsla(0, 0%, 0%, 0.8);
+     width: auto;
+     height: auto;
+     margin-bottom: 50px;
+   }
+
+  .rhap_button-clear.rhap_main-controls-button.rhap_forward-button {
+   display: none;
+  } 
+
   .rhap_main-controls svg { /* Play Button*/
     width: 4vw;
     height: 4vw;
   }
 
-  .rhap_button-clear.rhap_repeat-button{
-    color: hsla(0, 0%, 0%, 0.8);
-  }
 
-  .rhap_button-clear.rhap_volume-button{
-    color: hsla(0, 0%, 0%, 0.8);
-  }
-
-  .rhap_volume-indicator{
-    color: hsla(0, 0%, 0%, 0.8);
-  }
-
-  .rhap_progress-section {
-    justify-content: center;
+.rhap_progress-section {
+  justify-content: center;
 }
 
+
+.rhap_button-clear.rhap_repeat-button{
+    color: hsla(0, 0%, 0%, 0.8);
+    margin-left: 3.3em;
+    margin-right: 2em;
+  }
+
+
+.rhap_current-left-time.rhap_time.rhap_current-left-time {
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rhap_button-clear.rhap_volume-button{
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+
+.rhap_volume-indicator{
+  color: hsla(0, 0%, 0%, 0.8);
+}
 
 .rhap_volume-button {
   flex: 0 0 2vw;
@@ -392,6 +419,12 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   width: 1.75vw;
   height: auto;
 }
+
+.rhap_button-clear.rhap_rewind-button svg{ /* Rewind Button*/
+  width: 3vw;
+  height: auto;
+}
+
 .rhap_volume-filled{
   color: hsla(0, 0%, 0%, 0.8);
 }
@@ -411,9 +444,9 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 }
 
 .rhap_volume-indicator {
-  width: 0.75vw;
-  height: 0.75vw;
-  top: -6px;
+  width: 0.8vw;
+  height: 0.8vw;
+  top: -0.3em;
 }
 
 .rhap_button-clear.rhap_repeat-button, svg {

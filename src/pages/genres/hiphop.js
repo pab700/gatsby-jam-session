@@ -42,8 +42,8 @@ const HiphopPage = () => (
           </div>
 
           <div class="main-buttons_wrapper">
-          <div className="container1">
-        <h3>1</h3>
+          <div className="PlayerWhite">
+       
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
           loop={true}
@@ -68,8 +68,8 @@ const HiphopPage = () => (
         />
   </div>
 
-          <div className="container2">
-        <h3>2</h3>
+          <div className="PlayerGray">
+        
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
           loop={true}
@@ -94,8 +94,8 @@ const HiphopPage = () => (
         />
   </div>
 
-          <div className="container3">
-        <h3>3</h3>
+          <div className="PlayerBlack">
+        
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
           loop={true}
@@ -120,8 +120,7 @@ const HiphopPage = () => (
         />
   </div>
 
-         <div className="container4">
-        <h3>4</h3>
+         <div className="PlayerHipHop">
         <AudioPlayer
           src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
           loop={true}

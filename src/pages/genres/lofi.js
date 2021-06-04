@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -37,21 +39,112 @@ const LofiPage = () => (
           <Link to="/lernecke/lofilernecke/">LERNECKE</Link>
          </div>
         </div>
-
+        
         <div class="main-buttons_wrapper">
-            <div class="main-button" id="drum-1">
-              
-            </div>
-            <div class="main-button" id="drum-2">
+          <div className="PlayerWhite">
+       
+        <AudioPlayer
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          loop={true}
+          volume={0.35}
+          showFilledVolume={true}
+          showJumpControls={false}
+          customProgressBarSection={
+            [
+              RHAP_UI.VOLUME,
+              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.LOOP,  
+              <p style={{marginRight:50}}></p>,  
+              RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customVolumeControls={
+            []
+          }
+          customAdditionalControls={
+            []
+          }
+        />
+  </div>
 
-            </div>
-            <div class="main-button" id="drum-3">
+          <div className="PlayerGray">
+        
+        <AudioPlayer
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          loop={true}
+          volume={0.35}
+          showFilledVolume={true}
+          showJumpControls={false}
+          customProgressBarSection={
+            [
+              RHAP_UI.VOLUME,
+              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.LOOP,  
+              <p style={{marginRight:50}}></p>,  
+              RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customVolumeControls={
+            []
+          }
+          customAdditionalControls={
+            []
+          }
+        />
+  </div>
 
-            </div>
-            <div class="main-button" id="drum-4">
+          <div className="PlayerBlack">
+        
+        <AudioPlayer
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          loop={true}
+          volume={0.35}
+          showFilledVolume={true}
+          showJumpControls={false}
+          customProgressBarSection={
+            [
+              RHAP_UI.VOLUME,
+              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.LOOP,  
+              <p style={{marginRight:50}}></p>,  
+              RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customVolumeControls={
+            []
+          }
+          customAdditionalControls={
+            []
+          }
+        />
+  </div>
 
-            </div>
-        </div>
+         <div className="PlayerLofi">
+        <AudioPlayer
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          loop={true}
+          volume={0.35}
+          showFilledVolume={true}
+          showJumpControls={false}
+          customProgressBarSection={
+            [
+              RHAP_UI.VOLUME,
+              <p style={{marginRight:45}}></p>,   
+              RHAP_UI.LOOP,  
+              <p style={{marginRight:50}}></p>,  
+              RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customVolumeControls={
+            []
+          }
+          customAdditionalControls={
+            []
+          }
+        />
+  </div>
+          </div>
+
       </section>
     
       </Layout>

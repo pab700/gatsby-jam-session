@@ -129,7 +129,6 @@ const HiphopPage = () => (
           loop={true}
           volume={0.35}
           showFilledVolume={true}
-          showJumpControls={false}
           progressJumpStep={
             60000
           }

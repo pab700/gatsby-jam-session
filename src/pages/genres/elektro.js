@@ -36,7 +36,7 @@ const ElektroPage = () => (
            </div> 
 
            <div class="lernlink">
-            <Link to="/lernecke/elektrolernecke/">LERNECKE</Link>
+           <Link to="/lernecke/elektrolernecke/">LERNECKE</Link>
            </div>
           </div>
 

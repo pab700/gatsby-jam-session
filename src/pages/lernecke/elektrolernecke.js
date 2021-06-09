@@ -7,19 +7,30 @@ import SEO from "../../components/seo"
 
 const ElektrolerneckePage = () => (
 
-  <body>
+  <body class="bluebg">
     <div >
       <Layout>
         <SEO title="Elektrolernecke" />
-        <section>
-          <div><img></img></div>
-          <h1>ELEKTRO</h1>
-          <h2>LERNECKE</h2>
+        <section class="lerneckeMain">
+          <div class="headerLernecke">
 
-          <Link to="/genres/elektro">ZURÜCK ZUR SESSION</Link>
-          <Link to="/genres/elektro">MUSIKTHEORIE</Link>
+            <div class="sessionLink" ><Link to="/genres/elektro">ZURÜCK ZUR SESSION</Link></div>
 
-          <div class="allPlayerLerneckeWrapper">
+            <div class="lerneckeTitel">
+              <div><img></img></div>
+              <h1>ELEKTRO</h1>
+              <h2>LERNECKE</h2>
+            </div>
+
+
+            <div class="theorieLink"><Link to="/genres/elektro">MUSIKTHEORIE</Link></div>
+
+          </div>
+
+
+          <div class="allPlayerWrapper">
+
+          <div class="firstRowPlayerLerneckeWrapper">
 
             <div class="firstSample">
               <div class="title">
@@ -34,9 +45,9 @@ const ElektrolerneckePage = () => (
 
                 <div class="titleList">
                   <ul>
-                    <li>TITEL</li>
-                    <li>BPM</li>
-                    <li>KEY</li>
+                    <li><h4>TITEL</h4></li>
+                    <li><h4>BPM</h4></li>
+                    <li><h4>KEY</h4></li>
                   </ul>
                 </div>
 
@@ -52,7 +63,6 @@ const ElektrolerneckePage = () => (
               </div>
             </div>
 
-
             <div class="secondSample">
               <div class="title">
                 <h3>Bass</h3>
@@ -66,9 +76,9 @@ const ElektrolerneckePage = () => (
 
                 <div class="titleList">
                   <ul>
-                    <li>TITEL</li>
-                    <li>BPM</li>
-                    <li>KEY</li>
+                    <li><h4>TITEL</h4></li>
+                    <li><h4>BPM</h4></li>
+                    <li><h4>KEY</h4></li>
                   </ul>
                 </div>
 
@@ -84,6 +94,10 @@ const ElektrolerneckePage = () => (
               </div>
             </div>
 
+          </div>
+
+
+          <div class="secondRowPlayerLerneckeWrapper">
             <div class="thirdSample">
               <div class="title">
                 <h3>Hauptmelodie</h3>
@@ -97,9 +111,9 @@ const ElektrolerneckePage = () => (
 
                 <div class="titleList">
                   <ul>
-                    <li>TITEL</li>
-                    <li>BPM</li>
-                    <li>KEY</li>
+                    <li><h4>TITEL</h4></li>
+                    <li><h4>BPM</h4></li>
+                    <li><h4>KEY</h4></li>
                   </ul>
                 </div>
 
@@ -128,9 +142,9 @@ const ElektrolerneckePage = () => (
 
                 <div class="titleList">
                   <ul>
-                    <li>TITEL</li>
-                    <li>BPM</li>
-                    <li>KEY</li>
+                    <li><h4>TITEL</h4></li>
+                    <li><h4>BPM</h4></li>
+                    <li><h4>KEY</h4></li>
                   </ul>
                 </div>
 
@@ -146,6 +160,10 @@ const ElektrolerneckePage = () => (
               </div>
             </div>
 
+            </div>
+
+
+            </div>
 
 
 
@@ -156,7 +174,6 @@ const ElektrolerneckePage = () => (
 
 
 
-          </div>
 
         </section>
       </Layout>

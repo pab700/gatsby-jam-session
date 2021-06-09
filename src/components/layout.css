@@ -27,6 +27,23 @@
   background-image: linear-gradient(to left top, #8e8171, #9e917f, #aea18c, #beb19b, #cec2a9, #d4c8ad, #dacdb0, #e0d3b4, #ddcead, #dacaa7, #d8c5a0, #d5c09a);
 }
 
+.bluebg{
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+/* Set up proportionate scaling */
+width: 100%;
+height: auto;
+
+/* Set up positioning */
+position: fixed;
+top: 0;
+left: 0;
+
+background-image: linear-gradient(to left top, #8e8171, #9e917f, #aea18c, #beb19b, #cec2a9, #d4c8ad, #dacdb0, #e0d3b4, #ddcead, #dacaa7, #d8c5a0, #d5c09a);
+}
+
 /* || Startseite */
 .startseite{
   text-align: center;
@@ -460,4 +477,99 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   font-size: 2rem;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+.firstRowPlayerLerneckeWrapper, .secondRowPlayerLerneckeWrapper {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  margin-top: 7%;
+  
+}
+
+
+.title {
+width:15%;
+}
+
+
+.firstSample, .secondSample, .thirdSample, .fourthSample {
+
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+
+
+.SampleList {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 7%;
+ 
+
+}
+
+.headerLernecke {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.sessionLink, .theorieLink {
+  font-size: 1.7rem;
+
+}
+
+.lerneckeTitel{
+margin: 0;
+padding: 0;
+
+}
+
+.lerneckeMain h1{
+
+text-align: center;
+  padding:0;
+  margin:0;
+  font-weight: 1000;
+  font-size: 2.5rem;
+}
+.lerneckeMain h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  margin-top: 0.5%;
+  font-weight: 550;
+  font-size: 1.5rem;
+}
+
+
+.SampleList ul li {
+  list-style: none;
+}
+
+
+.allPlayerWrapper {
+display: block;
+
+}
+
+
+
+
 

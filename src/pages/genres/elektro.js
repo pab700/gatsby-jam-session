@@ -51,7 +51,6 @@ const ElektroPage = () => (
           src={drums}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -84,7 +83,6 @@ const ElektroPage = () => (
           src={bass}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -117,7 +115,6 @@ const ElektroPage = () => (
           src={melo}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -149,7 +146,6 @@ const ElektroPage = () => (
           src={perc}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000

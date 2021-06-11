@@ -51,7 +51,6 @@ const LofiPage = () => (
           src={drums}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -84,7 +83,6 @@ const LofiPage = () => (
           src={piano}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -117,7 +115,6 @@ const LofiPage = () => (
           src={shaker}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -149,7 +146,6 @@ const LofiPage = () => (
           src={vocalsample}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000

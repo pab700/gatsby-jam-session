@@ -1,15 +1,22 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+import '../../components/layout_lernecke.css';
 
-import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import drums from "../loops/electric/drums.wav"
+import bass from "../loops/electric/bass.wav"
+import melo from "../loops/electric/melo.wav"
+import perc from "../loops/electric/perc.wav"
+
 
 const ElektrolerneckePage = () => (
 
   <body class="bluebg">
     <div >
-      <Layout>
+
         <SEO title="Elektrolernecke" />
         <section class="lerneckeMain">
           <div class="headerLernecke">
@@ -35,9 +42,25 @@ const ElektrolerneckePage = () => (
             <div class="firstSample">
               <div class="title">
                 <h3>Drums</h3>
-                <div class="PlayerWhiteLernecke">
-                </div>
               </div>
+          <div className="PlayerWhiteLite">
+            <AudioPlayer
+              src={drums}
+              loop={true}
+              volume={0.8}
+              showFilledVolume={true}
+              showJumpControls={false}
+
+              customProgressBarSection={
+                []
+              }
+              customControlsSection={
+                [
+                  RHAP_UI.MAIN_CONTROLS,
+                ]
+              }
+            />
+          </div>
 
 
 
@@ -61,14 +84,29 @@ const ElektrolerneckePage = () => (
 
 
               </div>
-            </div>
+            
 
             <div class="secondSample">
               <div class="title">
                 <h3>Bass</h3>
-                <div class="PlayerGrayLernecke">
                 </div>
-              </div>
+          <div className="PlayerGrayLite">
+            <AudioPlayer
+              src={bass}
+              loop={true}
+              volume={0.8}
+              showFilledVolume={true}
+              showJumpControls={false}
+              customProgressBarSection={
+                []
+              }
+              customControlsSection={
+                [
+                  RHAP_UI.MAIN_CONTROLS,
+                ]
+              }
+            />
+          </div>
 
 
 
@@ -95,17 +133,31 @@ const ElektrolerneckePage = () => (
             </div>
 
           </div>
+          </div>
 
 
           <div class="secondRowPlayerLerneckeWrapper">
             <div class="thirdSample">
               <div class="title">
                 <h3>Hauptmelodie</h3>
-                <div class="PlayerBlackLernecke">
                 </div>
-              </div>
-
-
+          <div className="PlayerBlackLite">
+            <AudioPlayer
+              src={melo}
+              loop={true}
+              volume={0.8}
+              showFilledVolume={true}
+              showJumpControls={false}
+              customProgressBarSection={
+                []
+              }
+              customControlsSection={
+                [
+                  RHAP_UI.MAIN_CONTROLS,
+                ]
+              }
+            />
+          </div>
 
               <div class="SampleList">
 
@@ -132,9 +184,26 @@ const ElektrolerneckePage = () => (
             <div class="fourthSample">
               <div class="title">
                 <h3>Perc</h3>
-                <div class="PlayerElektroLernecke">
                 </div>
-              </div>
+            
+          <div className="PlayerElektroLite">
+            <AudioPlayer
+              src={perc}
+              loop={true}
+              volume={0.8}
+              showFilledVolume={true}
+              showJumpControls={false}
+              customProgressBarSection={
+                []
+              }
+              customControlsSection={
+                [
+                  RHAP_UI.MAIN_CONTROLS,
+                ]
+              }
+            />
+          </div>
+              
 
 
 
@@ -168,15 +237,8 @@ const ElektrolerneckePage = () => (
 
 
 
-
-
-
-
-
-
-
         </section>
-      </Layout>
+
     </div>
   </body>
 )

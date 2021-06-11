@@ -6,6 +6,10 @@ import 'react-h5-audio-player/lib/styles.css';
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import drums from "../loops/hiphop/drums.wav"
+import acht from "../loops/hiphop/808.wav"
+import mainmelo from "../loops/hiphop/main melo.wav"
+import pianochords from "../loops/hiphop/piano chords.wav"
 
 const HiphopPage = () => (
   <body>
@@ -45,9 +49,10 @@ const HiphopPage = () => (
           <div className="PlayerWhite">
        
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={acht}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -78,9 +83,10 @@ const HiphopPage = () => (
           <div className="PlayerGray">
         
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={drums}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -110,9 +116,10 @@ const HiphopPage = () => (
           <div className="PlayerBlack">
         
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={pianochords}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -141,9 +148,10 @@ const HiphopPage = () => (
 
          <div className="PlayerHipHop">
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={mainmelo}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000

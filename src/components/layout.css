@@ -246,7 +246,7 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 
   /* || All Player Container */
   .PlayerWhite, .PlayerGray, .PlayerBlack, .PlayerHipHop, .PlayerElektro, .PlayerLofi, .PlayerSoul {
-    width: 25vw;
+    width: 24.5vw;
   }
 
   .PlayerWhite {
@@ -366,6 +366,8 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     transition: .5s ease-in-out;
   }
 
+
+   /* || Audio Player Layout */
   .rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button {
   color: hsla(0, 0%, 0%, 0.8);
   width: auto;
@@ -465,6 +467,7 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 .rhap_volume-bar { /* Volume Bar*/
   width: 4vw;
   height: 0.3vw;
+  background-color: #b8beba;
 }
 
 .rhap_volume-bar-area {
@@ -514,89 +517,6 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 
 
 
-
-
-
-.firstRowPlayerLerneckeWrapper, .secondRowPlayerLerneckeWrapper {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
-  margin-top: 7%;
-  
-}
-
-
-.title {
-width:15%;
-}
-
-
-.firstSample, .secondSample, .thirdSample, .fourthSample {
-
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-}
-
-
-
-.SampleList {
-  display: flex;
-  flex-direction: row;
-
-  margin-top: 7%;
- 
-
-}
-
-.headerLernecke {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.sessionLink, .theorieLink {
-  font-size: 1.7rem;
-
-}
-
-.lerneckeTitel{
-margin: 0;
-padding: 0;
-
-}
-
-.lerneckeMain h1{
-
-text-align: center;
-  padding:0;
-  margin:0;
-  font-weight: 1000;
-  font-size: 2.5rem;
-}
-.lerneckeMain h2{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-
-  margin-top: 0.5%;
-  font-weight: 550;
-  font-size: 1.5rem;
-}
-
-
-.SampleList ul li {
-  list-style: none;
-}
-
-
-.allPlayerWrapper {
-display: block;
-
-}
 
 
 

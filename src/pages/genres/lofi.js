@@ -5,6 +5,10 @@ import 'react-h5-audio-player/lib/styles.css';
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import drums from "../loops/lofi/drums.wav"
+import piano from "../loops/lofi/piano.wav"
+import shaker from "../loops/lofi/shaker.wav"
+import vocalsample from "../loops/lofi/vocal sample.wav"
 
 const LofiPage = () => (
   <body>
@@ -44,9 +48,10 @@ const LofiPage = () => (
           <div className="PlayerWhite">
        
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={drums}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -76,9 +81,10 @@ const LofiPage = () => (
           <div className="PlayerGray">
         
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={piano}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -108,9 +114,10 @@ const LofiPage = () => (
           <div className="PlayerBlack">
         
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={shaker}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -139,9 +146,10 @@ const LofiPage = () => (
 
          <div className="PlayerLofi">
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={vocalsample}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000

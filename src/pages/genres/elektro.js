@@ -5,6 +5,10 @@ import 'react-h5-audio-player/lib/styles.css';
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import drums from "../loops/electric/drums.wav"
+import bass from "../loops/electric/bass.wav"
+import melo from "../loops/electric/melo.wav"
+import perc from "../loops/electric/perc.wav"
 
 const ElektroPage = () => (
   <body>
@@ -44,9 +48,10 @@ const ElektroPage = () => (
           <div className="PlayerWhite">
        
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={drums}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -76,9 +81,10 @@ const ElektroPage = () => (
           <div className="PlayerGray">
         
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={bass}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -108,9 +114,10 @@ const ElektroPage = () => (
           <div className="PlayerBlack">
         
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={melo}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -139,9 +146,10 @@ const ElektroPage = () => (
 
          <div className="PlayerElektro">
         <AudioPlayer
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={perc}
           loop={true}
           volume={0.35}
+          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000

@@ -52,7 +52,6 @@ const HiphopPage = () => (
           src={acht}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -86,7 +85,6 @@ const HiphopPage = () => (
           src={drums}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -119,7 +117,6 @@ const HiphopPage = () => (
           src={pianochords}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000
@@ -151,7 +148,6 @@ const HiphopPage = () => (
           src={mainmelo}
           loop={true}
           volume={0.35}
-          autoPlay={true}
           showFilledVolume={true}
           progressJumpStep={
             60000

@@ -367,30 +367,38 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   }
 
   .rhap_button-clear.rhap_main-controls-button.rhap_play-pause-button {
-   color: hsla(0, 0%, 0%, 0.8);
-    width: auto;
-    height: auto;
-    margin-bottom: 50px;
+  color: hsla(0, 0%, 0%, 0.8);
+  width: auto;
+  height: auto;
+    
   }
 
   .rhap_controls-section {
-    margin-right: 3em;
+    flex: 10 0 auto;
   }
+
+  .rhap_stacked .rhap_controls-section {
+    margin-top: -40px;
+}
   
   .rhap_button-clear.rhap_main-controls-button.rhap_rewind-button {
     color: hsla(0, 0%, 0%, 0.8);
-     width: auto;
-     height: auto;
-     margin-bottom: 50px;
+    width: 3vw;
+    height: auto;
    }
 
   .rhap_button-clear.rhap_main-controls-button.rhap_forward-button {
    display: none;
   } 
 
+
+  .rhap_main-controls { /* Play Button*/
+    margin-left: 15px;
+  }
+
   .rhap_main-controls svg { /* Play Button*/
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
   }
 
 
@@ -401,8 +409,12 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 
 .rhap_button-clear.rhap_repeat-button{
     color: hsla(0, 0%, 0%, 0.8);
-    margin-left: 3.3em;
+    margin-left: 1em;
     margin-right: 2em;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -411,12 +423,16 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   left: 0;
   margin-right: auto;
   margin-left: auto;
+  font-size: 1.5vw;
 }
 
 .rhap_button-clear.rhap_volume-button{
   color: hsla(0, 0%, 0%, 0.8);
 }
 
+.rhap_volume-container {
+ margin-right: 20px;
+}
 
 .rhap_volume-indicator{
   color: hsla(0, 0%, 0%, 0.8);
@@ -463,19 +479,32 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 .rhap_volume-indicator {
   width: 0.8vw;
   height: 0.8vw;
-  top: -0.3em;
+  top: -0.25vw;
+}
+
+.rhap_button-clear.rhap_repeat-button{
+  color: hsla(0, 0%, 0%, 0.8);
+  margin-left: 1em;
+  margin-right: 2em;
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rhap_button-clear.rhap_repeat-button, svg {
   width: 1.5vw;
-  height: auto;
+  height: auto; 
+}
+
+.rhap_button-clear.rhap_repeat-button svg {
+  transform: rotate(0deg);
 }
 
 .rhap_time{
   color: hsla(0, 0%, 0%, 0.8);
   font-family: montserrat;
   font-size: 2rem;
-
 }
 
 

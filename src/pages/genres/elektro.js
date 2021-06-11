@@ -52,11 +52,16 @@ const ElektroPage = () => (
             60000
           }
           customProgressBarSection={
-            [
-              RHAP_UI.VOLUME,   
-              RHAP_UI.LOOP,  
-              <p style={{marginRight:20}}></p>, 
+            [ 
+              
               RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customControlsSection={
+            [
+              RHAP_UI.LOOP, 
+              RHAP_UI.MAIN_CONTROLS,
+              RHAP_UI.VOLUME,   
             ]
           }
           customVolumeControls={
@@ -79,11 +84,16 @@ const ElektroPage = () => (
             60000
           }
           customProgressBarSection={
-            [
-              RHAP_UI.VOLUME,   
-              RHAP_UI.LOOP,  
-              <p style={{marginRight:20}}></p>, 
+            [ 
+              
               RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customControlsSection={
+            [
+              RHAP_UI.LOOP, 
+              RHAP_UI.MAIN_CONTROLS,
+              RHAP_UI.VOLUME,   
             ]
           }
           customVolumeControls={
@@ -106,11 +116,16 @@ const ElektroPage = () => (
             60000
           }
           customProgressBarSection={
-            [
-              RHAP_UI.VOLUME,   
-              RHAP_UI.LOOP,  
-              <p style={{marginRight:20}}></p>, 
+            [ 
+              
               RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customControlsSection={
+            [
+              RHAP_UI.LOOP, 
+              RHAP_UI.MAIN_CONTROLS,
+              RHAP_UI.VOLUME,   
             ]
           }
           customVolumeControls={
@@ -132,11 +147,16 @@ const ElektroPage = () => (
             60000
           }
           customProgressBarSection={
-            [
-              RHAP_UI.VOLUME,   
-              RHAP_UI.LOOP,  
-              <p style={{marginRight:20}}></p>, 
+            [ 
+              
               RHAP_UI.CURRENT_LEFT_TIME,  
+            ]
+          }
+          customControlsSection={
+            [
+              RHAP_UI.LOOP, 
+              RHAP_UI.MAIN_CONTROLS,
+              RHAP_UI.VOLUME,   
             ]
           }
           customVolumeControls={

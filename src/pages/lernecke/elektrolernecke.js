@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import '../../components/layout_lernecke.css';
 
+import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import drums from "../loops/electric/drums.wav"
 import bass from "../loops/electric/bass.wav"
@@ -16,24 +16,20 @@ const ElektrolerneckePage = () => (
 
   <body class="bluebg">
     <div >
-
+      <Layout>
         <SEO title="Elektrolernecke" />
-        <section class="lerneckeMain">
-          <div class="headerLernecke">
+        <section class="lernecke">
+        <div class="header">
+           <div class="zurückzursession" ><Link to="/genres/elektro">ZURÜCK ZUR SESSION</Link></div>
+           <div class="titel">
+             <h1>JAM SESSION</h1>
+             <h2>Lernecke</h2>
+           </div> 
 
-            <div class="sessionLink" ><Link to="/genres/elektro">ZURÜCK ZUR SESSION</Link></div>
-
-            <div class="lerneckeTitel">
-              <div><img></img></div>
-              <h1>ELEKTRO</h1>
-              <h2>LERNECKE</h2>
-            </div>
-
-
-            <div class="theorieLink"><Link to="/genres/elektro">MUSIKTHEORIE</Link></div>
-
+           <div class="lernlink">
+            <Link to="/lernecke/hiphoplernecke/">MUSIKTHEORIE</Link>
+           </div>
           </div>
-
 
           <div class="allPlayerWrapper">
 
@@ -86,7 +82,10 @@ const ElektrolerneckePage = () => (
               </div>
             
 
-            <div class="secondSample">
+            
+
+          </div>
+           <div class="secondSample">
               <div class="title">
                 <h3>Bass</h3>
                 </div>
@@ -130,11 +129,10 @@ const ElektrolerneckePage = () => (
 
 
               </div>
+          </div>
+
+         
             </div>
-
-          </div>
-          </div>
-
 
           <div class="secondRowPlayerLerneckeWrapper">
             <div class="thirdSample">
@@ -238,7 +236,7 @@ const ElektrolerneckePage = () => (
 
 
         </section>
-
+        </Layout>          
     </div>
   </body>
 )

@@ -140,8 +140,9 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     font-size: 5rem;
   }
 
+
   .hauptseiten .titel h2{
-    margin-top: 10%;
+    margin-top: 0%;
     font-weight: 900;
     font-size: 4rem;
   }
@@ -150,10 +151,6 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     text-align: center;
     margin-top: 40px;
     padding: 0 48px;
-  }
-
-
-  .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -167,12 +164,28 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
     font-size: 2rem;
   }
+  
+  .lernecke .titel h1{
+    font-weight: 1000;
+    font-size: 5rem;
+  }
+
+  .lernecke .titel h2{
+    
+    font-weight: 900;
+    font-size: 4rem;
+  }
 
   .lernlink{
     font-size: 2rem;
     font-weight: 800;
   }
   
+  .zurückzursession{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
   .active {
     background-color: #04AA6D;
     color: white;
@@ -508,6 +521,142 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: montserrat;
   font-size: 2rem;
+}
+
+/* || Lernecke Layout */
+  
+.allPlayerWrapper .rhap_container .rhap_main.rhap_stacked .rhap_controls-section,.rhap_main-controls{
+  margin-left:12.5%;
+  
+}
+
+.firstSample ,.thirdSample{
+  margin-right: 5%;
+  margin-left: 7.5%;
+}
+
+.firstRowPlayerLerneckeWrapper, .secondRowPlayerLerneckeWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 7%;
+  
+}
+
+.PlayerWhiteLite .rhap_container{
+  outline: none;
+    border-radius: 25%;
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(255,250,250, 0.5);
+}
+
+.PlayerGrayLite .rhap_container{
+  outline: none;
+    border-radius: 25%;
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(150,150,150, 0.5);
+}
+
+.PlayerBlackLite .rhap_container{
+  outline: none;
+    border-radius: 25%;
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(5,5,5, 0.5)
+    ;
+}
+
+.PlayerElektroLite .rhap_container{
+  outline: none;
+    border-radius: 25%;
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(39, 174, 96, 0.5);
+}
+
+.allPlayerWrapper .title {
+  
+  margin-top: -70px;
+  margin-left:30px;
+  position: absolute;
+  font-size: 1.8rem;
+}
+
+
+.firstSample, .secondSample, .thirdSample, .fourthSample {
+
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+
+
+.SampleList {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.SampleList .titleList, .attributeList  {
+  line-height: 200%;
+  font-size: 1.75rem;
+}
+
+.SampleList .attributeList  {
+  margin-left: 5%;
+  width: 25vw;
+}
+
+.headerLernecke {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.sessionLink, .theorieLink {
+  font-size: 1.7rem;
+
+}
+
+.lerneckeTitel{
+margin: 0;
+padding: 0;
+
+}
+
+.lerneckeMain h1{
+
+text-align: center;
+  padding:0;
+  margin:0;
+  font-weight: 1000;
+  font-size: 2.5rem;
+}
+.lerneckeMain h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  margin-top: 0.5%;
+  font-weight: 550;
+  font-size: 1.5rem;
+}
+
+
+.SampleList ul li {
+  list-style: none;
+}
+
+
+.allPlayerWrapper {
+display: block;
+
 }
 
 

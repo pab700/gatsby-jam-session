@@ -9,6 +9,7 @@ import drums from "../loops/soul/drums.wav"
 import chords from "../loops/soul/chords.wav"
 import guitar from "../loops/soul/guitar.wav"
 import sample from "../loops/soul/sample.wav"
+import soulk from "../loops/soul_komplett.wav"
 
 const SoulPage = () => (
   <body>
@@ -36,7 +37,23 @@ const SoulPage = () => (
 
          <div class="titel">
            <h1>JAM SESSION</h1>
-           <h2>Soul</h2>
+           <div className="genreandplayer">
+              <h2>Soul</h2>
+                  <AudioPlayer
+                    src={soulk}
+                    loop={true}
+                    volume={0.8}
+                    showJumpControls={false}
+                    customProgressBarSection={
+                      []
+                    }
+                    customControlsSection={
+                      [
+                        RHAP_UI.MAIN_CONTROLS,
+                      ]
+                    }
+                  />
+              </div>
          </div> 
 
          <div class="lernlink">

@@ -9,6 +9,7 @@ import drums from "../loops/electric/drums.wav"
 import bass from "../loops/electric/bass.wav"
 import melo from "../loops/electric/melo.wav"
 import perc from "../loops/electric/perc.wav"
+import elektrok from "../loops/elektro_komplett.wav"
 
 const ElektroPage = () => (
   <body>
@@ -36,7 +37,23 @@ const ElektroPage = () => (
 
            <div class="titel">
              <h1>JAM SESSION</h1>
-             <h2>Elektro</h2>
+             <div className="genreandplayer">
+              <h2>Elektro</h2>
+                  <AudioPlayer
+                    src={elektrok}
+                    loop={true}
+                    volume={0.8}
+                    showJumpControls={false}
+                    customProgressBarSection={
+                      []
+                    }
+                    customControlsSection={
+                      [
+                        RHAP_UI.MAIN_CONTROLS,
+                      ]
+                    }
+                  />
+              </div>
            </div> 
 
            <div class="lernlink">

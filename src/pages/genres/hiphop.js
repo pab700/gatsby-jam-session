@@ -10,6 +10,7 @@ import drums from "../loops/hiphop/drums.wav"
 import acht from "../loops/hiphop/808.wav"
 import mainmelo from "../loops/hiphop/main melo.wav"
 import pianochords from "../loops/hiphop/piano chords.wav"
+import hiphopk from "../loops/hiphop_komplett.wav"
 
 const HiphopPage = () => (
   <body>
@@ -37,7 +38,23 @@ const HiphopPage = () => (
 
            <div class="titel">
              <h1>JAM SESSION</h1>
-             <h2>Hip-Hop</h2>
+              <div className="genreandplayer">
+              <h2>Hip-Hop</h2>
+                  <AudioPlayer
+                    src={hiphopk}
+                    loop={true}
+                    volume={0.8}
+                    showJumpControls={false}
+                    customProgressBarSection={
+                      []
+                    }
+                    customControlsSection={
+                      [
+                        RHAP_UI.MAIN_CONTROLS,
+                      ]
+                    }
+                  />
+              </div>
            </div> 
 
            <div class="lernlink">

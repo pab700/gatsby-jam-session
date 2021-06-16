@@ -9,6 +9,7 @@ import drums from "../loops/lofi/drums.wav"
 import piano from "../loops/lofi/piano.wav"
 import shaker from "../loops/lofi/shaker.wav"
 import vocalsample from "../loops/lofi/vocal sample.wav"
+import lofik from "../loops/lofi_komplett.wav"
 
 const LofiPage = () => (
   <body>
@@ -36,7 +37,23 @@ const LofiPage = () => (
 
          <div class="titel">
            <h1>JAM SESSION</h1>
-           <h2>Lofi</h2>
+           <div className="genreandplayer">
+              <h2>Lofi</h2>
+                  <AudioPlayer
+                    src={lofik}
+                    loop={true}
+                    volume={0.8}
+                    showJumpControls={false}
+                    customProgressBarSection={
+                      []
+                    }
+                    customControlsSection={
+                      [
+                        RHAP_UI.MAIN_CONTROLS,
+                      ]
+                    }
+                  />
+              </div>
          </div> 
 
          <div class="lernlink">

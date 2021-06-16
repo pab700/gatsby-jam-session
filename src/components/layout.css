@@ -82,7 +82,7 @@ background-image: linear-gradient(to left top, #8e8171, #9e917f, #aea18c, #beb19
   transform: scale(1.5);
 }
 
-/* || Startseite */
+/* || Genrewahlseite */
 .genreseite{
   text-align: center;
   margin-top: 10%;
@@ -129,6 +129,8 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);}
 
 
+/* || Hauptseiten */
+
   .hauptseiten {
     width: 100%;
     position: relative;
@@ -138,6 +140,7 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   .hauptseiten .titel h1{
     font-weight: 1000;
     font-size: 5rem;
+    margin-right: 1.5em;
   }
 
 
@@ -145,6 +148,7 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     margin-top: 0%;
     font-weight: 900;
     font-size: 4rem;
+    margin-right: 1.5em;
   }
 
   .header{
@@ -256,6 +260,26 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     position: absolute;
     bottom: 0;
   }
+
+
+
+/* || Hauptseite LITE-Player Container */
+
+.genreandplayer .rhap_container{
+  outline: none;
+  border-radius: 25%;
+  height: 5vw;
+  width: 5vw;
+  background-color: rgba(255, 250, 250, 0.11);
+  margin-left: 35%;
+}
+
+.genreandplayer .rhap_container .rhap_main.rhap_stacked .rhap_controls-section .rhap_main-controls{
+  margin-left: 5%;
+  margin-top: 60%;
+}
+
+
 
   /* || All Player Container */
   .PlayerWhite, .PlayerGray, .PlayerBlack, .PlayerHipHop, .PlayerElektro, .PlayerLofi, .PlayerSoul {
@@ -525,10 +549,12 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 
 /* || Lernecke Layout */
   
-.allPlayerWrapper .rhap_container .rhap_main.rhap_stacked .rhap_controls-section,.rhap_main-controls{
-  margin-left:12.5%;
+.allPlayerWrapper .rhap_container .rhap_main.rhap_stacked .rhap_controls-section .rhap_main-controls{
+  margin-left:20%;
+  margin-top: 20%;
   
 }
+
 
 .firstSample ,.thirdSample{
   margin-right: 5%;

@@ -39,6 +39,8 @@ const SoulPage = () => (
            <h1>JAM SESSION</h1>
            <div className="genreandplayer">
               <h2>Soul</h2>
+              <div class="tooltipgenre">
+                  <span class="tooltiptextgenre">Drücke Play um den ganzen Song zu spielen</span>
                   <AudioPlayer
                     src={soulk}
                     loop={true}
@@ -53,6 +55,7 @@ const SoulPage = () => (
                       ]
                     }
                   />
+                   </div>
               </div>
          </div> 
 

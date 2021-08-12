@@ -795,6 +795,141 @@ flex-direction: row;
   width: 100%;
 }
 
+/* || Hover Text Lernecke*/
+
+
+.tooltip .tooltiptext {
+  width: 120px;
+  font-size: 14px;
+  bottom: 100%;
+  left: 50%; 
+  margin-left: -60px; 
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(120,162,218,0.9);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(120,162,218,0.9) transparent transparent transparent;
+}
+
+/* || Hover Text Lernecke KEY*/
+
+.tooltipkey .tooltiptextkey {
+  width: 120px;
+  top: 100%;
+  left: 40%; 
+  margin-left: -60px; 
+  font-size: 14px;
+}
+
+.tooltipkey {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltipkey .tooltiptextkey {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(120,162,218,0.9);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipkey:hover .tooltiptextkey {
+  visibility: visible;
+}
+
+.tooltipkey .tooltiptextkey::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -40px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(120,162,218,0.9)  transparent;
+}
+
+
+
+/* || Hover Text Genre*/
+
+.tooltipgenre .tooltiptextgenre {
+  width: 120px;
+  top: 120%;
+  left: 40%; 
+  margin-left: -60px; 
+}
+
+.tooltipgenre {
+  position: relative;
+ 
+}
+
+
+.tooltipgenre .tooltiptextgenre  {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(200,170,109,0.9) ;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipgenre:hover .tooltiptextgenre  {
+  visibility: visible;
+}
+
+.tooltipgenre .tooltiptextgenre::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -40px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(200,170,109,0.9)  transparent;
+}
+
+
 
 
 

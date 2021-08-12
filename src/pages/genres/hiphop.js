@@ -15,31 +15,33 @@ import hiphopk from "../loops/hiphop_komplett.wav"
 const HiphopPage = () => (
   <body>
     <div class="yellowbg">
-        <Layout>
-          <SEO title="Hip-Hop" />
-          <section class="hauptseiten">
-            <div class="header">
-             <div class="topnav">
+      <Layout>
+        <SEO title="Hip-Hop" />
+        <section class="hauptseiten">
+          <div class="header">
+            <div class="topnav">
 
-                <div class="dropdown">
-                <button class="dropbtn">GENRE WECHSELN 
-                    <i class="fa fa-caret-down"></i>
+              <div class="dropdown">
+                <button class="dropbtn">GENRE WECHSELN
+                  <i class="fa fa-caret-down"></i>
                 </button>
 
                 <div class="dropdown-content">
-                    <Link to="/genres/lofi/" id="Lofidropdown">Lofi</Link>
-                    <Link to="/genres/soul/" id="Souldropdown">Soul</Link>
-                    <Link to="/genres/elektro/" id="Elektrodropdown">Elektro</Link>
+                  <Link to="/genres/lofi/" id="Lofidropdown">Lofi</Link>
+                  <Link to="/genres/soul/" id="Souldropdown">Soul</Link>
+                  <Link to="/genres/elektro/" id="Elektrodropdown">Elektro</Link>
                 </div>
 
-                </div> 
+              </div>
 
             </div>
 
-           <div class="titel">
-             <h1>JAM SESSION</h1>
+            <div class="titel">
+              <h1>JAM SESSION</h1>
               <div className="genreandplayer">
-              <h2>Hip-Hop</h2>
+                <h2>Hip-Hop</h2>
+                <div class="tooltipgenre">
+                  <span class="tooltiptextgenre">Drücke Play um den ganzen Song zu spielen</span>
                   <AudioPlayer
                     src={hiphopk}
                     loop={true}
@@ -54,143 +56,145 @@ const HiphopPage = () => (
                       ]
                     }
                   />
+                  </div>
+                </div>
               </div>
-           </div> 
 
-           <div class="lernlink">
-            <Link to="/lernecke/hiphoplernecke/">LERNECKE</Link>
-           </div>
-          </div>
 
-          <div class="main-buttons_wrapper">
-          <div className="PlayerWhite">
-       
-        <AudioPlayer
-          src={acht}
-          loop={true}
-          volume={0.35}
-          showFilledVolume={true}
-          progressJumpStep={
-            60000
-          }
-          customProgressBarSection={
-            [ 
-              
-              RHAP_UI.CURRENT_LEFT_TIME,  
-            ]
-          }
-          customControlsSection={
-            [
-              RHAP_UI.LOOP, 
-              RHAP_UI.MAIN_CONTROLS,
-              RHAP_UI.VOLUME,   
-            ]
-          }
+              <div class="lernlink">
+                <Link to="/lernecke/hiphoplernecke/">LERNECKE</Link>
+              </div>
+            </div>
 
-          customVolumeControls={
-            []
-          }
-          customAdditionalControls={
-            []
-          }
-        />
-  </div>
+            <div class="main-buttons_wrapper">
+              <div className="PlayerWhite">
 
-          <div className="PlayerGray">
-        
-        <AudioPlayer
-          src={drums}
-          loop={true}
-          volume={0.35}
-          showFilledVolume={true}
-          progressJumpStep={
-            60000
-          }
-          customProgressBarSection={
-            [ 
-              
-              RHAP_UI.CURRENT_LEFT_TIME,  
-            ]
-          }
-          customControlsSection={
-            [
-              RHAP_UI.LOOP, 
-              RHAP_UI.MAIN_CONTROLS,
-              RHAP_UI.VOLUME,   
-            ]
-          }
-          customVolumeControls={
-            []
-          }
-          customAdditionalControls={
-            []
-          }
-        />
-  </div>
+                <AudioPlayer
+                  src={acht}
+                  loop={true}
+                  volume={0.35}
+                  showFilledVolume={true}
+                  progressJumpStep={
+                    60000
+                  }
+                  customProgressBarSection={
+                    [
 
-          <div className="PlayerBlack">
-        
-        <AudioPlayer
-          src={pianochords}
-          loop={true}
-          volume={0.35}
-          showFilledVolume={true}
-          progressJumpStep={
-            60000
-          }
-          customProgressBarSection={
-            [ 
-              
-              RHAP_UI.CURRENT_LEFT_TIME,  
-            ]
-          }
-          customControlsSection={
-            [
-              RHAP_UI.LOOP, 
-              RHAP_UI.MAIN_CONTROLS,
-              RHAP_UI.VOLUME,   
-            ]
-          }
-          customVolumeControls={
-            []
-          }
-          customAdditionalControls={
-            []
-          }
-        />
-  </div>
+                      RHAP_UI.CURRENT_LEFT_TIME,
+                    ]
+                  }
+                  customControlsSection={
+                    [
+                      RHAP_UI.LOOP,
+                      RHAP_UI.MAIN_CONTROLS,
+                      RHAP_UI.VOLUME,
+                    ]
+                  }
 
-         <div className="PlayerHipHop">
-        <AudioPlayer
-          src={mainmelo}
-          loop={true}
-          volume={0.35}
-          showFilledVolume={true}
-          progressJumpStep={
-            60000
-          }
-          customProgressBarSection={
-            [ 
-              
-              RHAP_UI.CURRENT_LEFT_TIME,  
-            ]
-          }
-          customControlsSection={
-            [
-              RHAP_UI.LOOP, 
-              RHAP_UI.MAIN_CONTROLS,
-              RHAP_UI.VOLUME,   
-            ]
-          }
-          customVolumeControls={
-            []
-          }
-          customAdditionalControls={
-            []
-          }
-        />
-  </div>
-          </div>
+                  customVolumeControls={
+                    []
+                  }
+                  customAdditionalControls={
+                    []
+                  }
+                />
+              </div>
+
+              <div className="PlayerGray">
+
+                <AudioPlayer
+                  src={drums}
+                  loop={true}
+                  volume={0.35}
+                  showFilledVolume={true}
+                  progressJumpStep={
+                    60000
+                  }
+                  customProgressBarSection={
+                    [
+
+                      RHAP_UI.CURRENT_LEFT_TIME,
+                    ]
+                  }
+                  customControlsSection={
+                    [
+                      RHAP_UI.LOOP,
+                      RHAP_UI.MAIN_CONTROLS,
+                      RHAP_UI.VOLUME,
+                    ]
+                  }
+                  customVolumeControls={
+                    []
+                  }
+                  customAdditionalControls={
+                    []
+                  }
+                />
+              </div>
+
+              <div className="PlayerBlack">
+
+                <AudioPlayer
+                  src={pianochords}
+                  loop={true}
+                  volume={0.35}
+                  showFilledVolume={true}
+                  progressJumpStep={
+                    60000
+                  }
+                  customProgressBarSection={
+                    [
+
+                      RHAP_UI.CURRENT_LEFT_TIME,
+                    ]
+                  }
+                  customControlsSection={
+                    [
+                      RHAP_UI.LOOP,
+                      RHAP_UI.MAIN_CONTROLS,
+                      RHAP_UI.VOLUME,
+                    ]
+                  }
+                  customVolumeControls={
+                    []
+                  }
+                  customAdditionalControls={
+                    []
+                  }
+                />
+              </div>
+
+              <div className="PlayerHipHop">
+                <AudioPlayer
+                  src={mainmelo}
+                  loop={true}
+                  volume={0.35}
+                  showFilledVolume={true}
+                  progressJumpStep={
+                    60000
+                  }
+                  customProgressBarSection={
+                    [
+
+                      RHAP_UI.CURRENT_LEFT_TIME,
+                    ]
+                  }
+                  customControlsSection={
+                    [
+                      RHAP_UI.LOOP,
+                      RHAP_UI.MAIN_CONTROLS,
+                      RHAP_UI.VOLUME,
+                    ]
+                  }
+                  customVolumeControls={
+                    []
+                  }
+                  customAdditionalControls={
+                    []
+                  }
+                />
+              </div>
+            </div>
           
 
 
@@ -199,6 +203,6 @@ const HiphopPage = () => (
         </Layout>
         </div>
 </body>
-)
+    )
 
-export default HiphopPage
+    export default HiphopPage

@@ -65,8 +65,9 @@ const SoullerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
@@ -114,14 +115,16 @@ const SoullerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Spanish Guitar mit FX</li>
+                    <li><div class="tooltip">Spanish Guitar mit FX<span class="tooltiptext">FX = Effekte</span></div></li>                      
+
                       <li>138</li>
                       <li>B minor</li>
                     </ul>
@@ -162,8 +165,9 @@ const SoullerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
@@ -210,14 +214,16 @@ const SoullerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Bass-Sample</li>
+                    <li><div class="tooltip">Bass-Sample<span class="tooltiptext">Bass-Sample von George Benson</span></div></li>                      
+
                       <li>138</li>
                       <li>B minor</li>
                     </ul>

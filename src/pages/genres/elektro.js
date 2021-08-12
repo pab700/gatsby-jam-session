@@ -39,6 +39,8 @@ const ElektroPage = () => (
              <h1>JAM SESSION</h1>
              <div className="genreandplayer">
               <h2>Elektro</h2>
+              <div class="tooltipgenre">
+                  <span class="tooltiptextgenre">Drücke Play um den ganzen Song zu spielen</span>
                   <AudioPlayer
                     src={elektrok}
                     loop={true}
@@ -53,6 +55,7 @@ const ElektroPage = () => (
                       ]
                     }
                   />
+                  </div>
               </div>
            </div> 
 

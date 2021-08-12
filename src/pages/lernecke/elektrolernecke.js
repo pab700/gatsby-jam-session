@@ -66,14 +66,16 @@ const ElektrolerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Uptempo-Drums</li>
+                    <li><div class="tooltip">Uptempo-Drums<span class="tooltiptext">Drums mit doppelter Geschwindigkeit</span></div></li>                      
+
                       <li>138</li>
                       <li>B minor</li>
                     </ul>
@@ -115,14 +117,16 @@ const ElektrolerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Wavetable-Synth-Bass</li>
+                    <li><div class="tooltip">Wavetable-Synth-Bass<span class="tooltiptext">Synthesizer mit besonderer Art der Klangerzeugung</span></div></li>                      
+
                       <li>138</li>
                       <li>B minor</li>
                     </ul>
@@ -163,14 +167,16 @@ const ElektrolerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Vocal-Chop als Melodie</li>
+                    <li><div class="tooltip">Vocal-Chop als Melodie<span class="tooltiptext">Vocal-Chop = zusammengeschnittenes Vocal-Sample</span></div></li>                      
+
                       <li>138</li>
                       <li>B minor</li>
                     </ul>
@@ -211,14 +217,16 @@ const ElektrolerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Electronic-Percussion</li>
+                    <li><div class="tooltip">Electronic Percussions<span class="tooltiptext">Percussions = Schlaginstrumente</span></div></li>                      
+
                       <li>138</li>
                       <li>B minor</li>
                     </ul>

@@ -66,14 +66,16 @@ const HipHoplerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Classic Trap Drums</li>
+                    <li><div class="tooltip">Classic Trap Drums<span class="tooltiptext">Klassische HipHop-Trap Drums</span></div></li>                      
+
                       <li>124</li>
                       <li>Ab minor</li>
                     </ul>
@@ -115,14 +117,15 @@ const HipHoplerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Akkorde mit Vibrato</li>
+                    <li><div class="tooltip">Akkorde mit Vibrato<span class="tooltiptext">Vibrato: periodisch wiederkehrende, geringfügige Veränderung der Frequenz eines gehaltenen Tons</span></div></li>
                       <li>124</li>
                       <li>Ab minor</li>
                     </ul>
@@ -163,14 +166,16 @@ const HipHoplerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Deep Water Sound</li>
+                    <li><div class="tooltip">Deep Water Sound<span class="tooltiptext">Metaphorische Bezeichnung für die Klangcharakteristik der 808</span></div></li>                      
+
                       <li>124</li>
                       <li>Ab minor</li>
                     </ul>
@@ -211,8 +216,9 @@ const HipHoplerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 

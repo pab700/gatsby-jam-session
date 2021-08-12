@@ -39,7 +39,10 @@ const LofiPage = () => (
            <h1>JAM SESSION</h1>
            <div className="genreandplayer">
               <h2>Lo-fi</h2>
-                  <AudioPlayer
+                <div class="tooltipgenre">  
+                <span class="tooltiptextgenre">Drücke Play um den ganzen Song zu spielen</span>
+                
+                <AudioPlayer
                     src={lofik}
                     loop={true}
                     volume={0.8}
@@ -53,6 +56,7 @@ const LofiPage = () => (
                       ]
                     }
                   />
+                  </div>
               </div>
          </div> 
 

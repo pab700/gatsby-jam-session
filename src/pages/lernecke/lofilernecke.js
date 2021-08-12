@@ -65,14 +65,15 @@ const LofilerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Drums mit Analog Noise </li>
+                    <li><div class="tooltip">Drums mit Analog Noise<span class="tooltiptext">Analog Noise = Vinyl-Geräusche</span></div></li>                      
+
                       <li>84</li>
                       <li>Bb minor</li>
                     </ul>
@@ -114,14 +115,16 @@ const LofilerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>
+                      <li><div class="tooltipkey"><h4>KEY</h4><span class="tooltiptextkey">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
                   <div class="attributeList">
                     <ul>
-                      <li>Shaker (4-Step-Bounce)</li>
+                    <li><div class="tooltip">Shaker (4-Step-Bounce)<span class="tooltiptext">Shaker schlägt alle vier Schläge</span></div></li>                      
+
                       <li>84</li>
                       <li>Bb minor</li>
                     </ul>
@@ -162,8 +165,9 @@ const LofilerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 
@@ -210,8 +214,9 @@ const LofilerneckePage = () => (
                   <div class="titleList">
                     <ul>
                       <li><h4>TITEL</h4></li>
-                      <li><h4>BPM</h4></li>
-                      <li><h4>KEY</h4></li>
+                      <li><div class="tooltip"><h4>BPM</h4><span class="tooltiptext">BPM = Beats Per Minute und bestimmt das Tempo des Songs</span></div></li>                      
+                      <li><div class="tooltip"><h4>KEY</h4><span class="tooltiptext">= Tonart: Bestimmung des Tongeschlechts als Dur und Moll auf einer bestimmten Tonstufe</span></div></li>                      
+
                     </ul>
                   </div>
 

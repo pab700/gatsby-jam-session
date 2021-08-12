@@ -38,7 +38,7 @@ const LofiPage = () => (
          <div class="titel">
            <h1>JAM SESSION</h1>
            <div className="genreandplayer">
-              <h2>Lofi</h2>
+              <h2>Lo-fi</h2>
                   <AudioPlayer
                     src={lofik}
                     loop={true}

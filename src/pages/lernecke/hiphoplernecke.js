@@ -6,29 +6,29 @@ import 'react-h5-audio-player/lib/styles.css';
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import drums from "../loops/electric/drums.wav"
-import bass from "../loops/electric/bass.wav"
-import melo from "../loops/electric/melo.wav"
-import perc from "../loops/electric/perc.wav"
+import drums from "../loops/hiphop/drums.wav"
+import acht from "../loops/hiphop/808.wav"
+import mainmelo from "../loops/hiphop/main melo.wav"
+import pianochords from "../loops/hiphop/piano chords.wav"
 
 
 
-const ElektrolerneckePage = () => (
+const HipHoplerneckePage = () => (
 
   <body class="bluebg">
     <div >
       <Layout>
-        <SEO title="Elektrolernecke" />
+        <SEO title="HipHoplernecke" />
         <section class="lernecke">
           <div class="header">
-            <div class="zurückzursession" ><Link to="/genres/elektro">ZURÜCK ZUR SESSION</Link></div>
+            <div class="zurückzursession" ><Link to="/genres/hiphop">ZURÜCK ZUR SESSION</Link></div>
             <div class="lerneckeTitel">
-              <h1>ELEKTRO</h1>
+              <h1>HIP-HOP</h1>
               <h2>LERNECKE</h2>
             </div>
 
             <div class="musiktheorieLink">
-              <Link to="../../musiktheorie/elektrotheorie">MUSIKTHEORIE</Link>
+              <Link to="../../musiktheorie/hiphoptheorie/">MUSIKTHEORIE</Link>
             </div>
           </div>
 
@@ -73,9 +73,9 @@ const ElektrolerneckePage = () => (
 
                   <div class="attributeList">
                     <ul>
-                      <li>Uptempo-Drums</li>
-                      <li>138</li>
-                      <li>B minor</li>
+                      <li>Classic Trap Drums</li>
+                      <li>124</li>
+                      <li>Ab minor</li>
                     </ul>
                   </div>
 
@@ -88,11 +88,11 @@ const ElektrolerneckePage = () => (
 
               <div class="secondSample">
                 <div class="title">
-                  <h3>Bass</h3>
+                  <h3>Piano Chords</h3>
                 </div>
                 <div className="PlayerGrayLite">
                   <AudioPlayer
-                    src={bass}
+                    src={pianochords}
                     loop={true}
                     volume={0.8}
                     showFilledVolume={true}
@@ -122,9 +122,9 @@ const ElektrolerneckePage = () => (
 
                   <div class="attributeList">
                     <ul>
-                      <li>Wavetable-Synth-Bass</li>
-                      <li>138</li>
-                      <li>B minor</li>
+                      <li>Akkorde mit Vibrato</li>
+                      <li>124</li>
+                      <li>Ab minor</li>
                     </ul>
                   </div>
 
@@ -138,11 +138,11 @@ const ElektrolerneckePage = () => (
             <div class="secondRowPlayerLerneckeWrapper">
               <div class="thirdSample">
                 <div class="title">
-                  <h3>Hauptmelodie</h3>
+                  <h3>808</h3>
                 </div>
                 <div className="PlayerBlackLite">
                   <AudioPlayer
-                    src={melo}
+                    src={acht}
                     loop={true}
                     volume={0.8}
                     showFilledVolume={true}
@@ -170,9 +170,9 @@ const ElektrolerneckePage = () => (
 
                   <div class="attributeList">
                     <ul>
-                      <li>Vocal-Chop als Melodie</li>
-                      <li>138</li>
-                      <li>B minor</li>
+                      <li>Deep Water Sound</li>
+                      <li>124</li>
+                      <li>Ab minor</li>
                     </ul>
                   </div>
 
@@ -182,12 +182,12 @@ const ElektrolerneckePage = () => (
 
               <div class="fourthSample">
                 <div class="title">
-                  <h3>Perc</h3>
+                  <h3>Hauptmelodie</h3>
                 </div>
 
-                <div className="PlayerElektroLite">
+                <div className="PlayerHipHopLite">
                   <AudioPlayer
-                    src={perc}
+                    src={mainmelo}
                     loop={true}
                     volume={0.8}
                     showFilledVolume={true}
@@ -218,9 +218,9 @@ const ElektrolerneckePage = () => (
 
                   <div class="attributeList">
                     <ul>
-                      <li>Electronic-Percussion</li>
-                      <li>138</li>
-                      <li>B minor</li>
+                      <li>Bell mit Hall-Effekt</li>
+                      <li>124</li>
+                      <li>Ab minor</li>
                     </ul>
                   </div>
 
@@ -242,4 +242,4 @@ const ElektrolerneckePage = () => (
   </body>
 )
 
-export default ElektrolerneckePage
+export default HipHoplerneckePage

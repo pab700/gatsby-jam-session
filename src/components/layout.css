@@ -24,8 +24,8 @@
   top: 0;
   left: 0;
 
-  background-image: linear-gradient(to left top, #8e8171, #9e917f, #aea18c, #beb19b, #cec2a9, #d4c8ad, #dacdb0, #e0d3b4, #ddcead, #dacaa7, #d8c5a0, #d5c09a);
-}
+  background: rgb(200,170,109);
+  background: linear-gradient(118deg, rgba(200,170,109,1) 0%, rgba(214,203,176,1) 70%, rgba(226,233,236,1) 100%);}
 
 .bluebg{
   /* Set rules to fill background */
@@ -41,7 +41,8 @@ position: fixed;
 top: 0;
 left: 0;
 
-background-image: linear-gradient(to left top, #8e8171, #9e917f, #aea18c, #beb19b, #cec2a9, #d4c8ad, #dacdb0, #e0d3b4, #ddcead, #dacaa7, #d8c5a0, #d5c09a);
+background: rgb(226,233,236);
+background: linear-gradient(118deg, rgba(226,233,236,1) 0%, rgba(120,162,218,1) 100%);
 }
 
 /* || Startseite */
@@ -169,25 +170,32 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     font-size: 2rem;
   }
   
-  .lernecke .titel h1{
-    font-weight: 1000;
-    font-size: 5rem;
-  }
-
-  .lernecke .titel h2{
-    
-    font-weight: 900;
-    font-size: 4rem;
-  }
 
   .lernlink{
     font-size: 2rem;
     font-weight: 800;
+   
+  }
+
+  .musiktheorieLink{
+    font-size: 2rem;
+    font-weight: 800;
+    width:33%;
+   
+  }
+
+  .musiktheorieLernLink{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-right: 13%;
+    width:20%;
+   
   }
   
   .zurückzursession{
     font-size: 2rem;
     font-weight: 800;
+    width: 33%;
   }
 
   .active {
@@ -270,7 +278,7 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   border-radius: 25%;
   height: 5vw;
   width: 5vw;
-  background-color: rgba(255, 250, 250, 0.11);
+  background-color: rgba(255, 250, 250, 0.0);
   margin-left: 35%;
 }
 
@@ -565,7 +573,8 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 7%;
+  margin-top: 11%;
+ 
   
 }
 
@@ -602,10 +611,35 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
     background-color: rgba(39, 174, 96, 0.5);
 }
 
+.PlayerHipHopLite .rhap_container{
+  outline: none;
+    border-radius: 25%;
+    height: 7vw;
+    width: 7vw;
+  background-color: rgba(231, 76, 60, 0.5);
+}
+
+.PlayerSoulLite .rhap_container{
+  outline: none;
+    border-radius: 25%;
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(241, 196, 15, 0.5);
+}
+
+.PlayerLofiLite .rhap_container{
+  outline: none;
+    border-radius: 25%;
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(52, 152, 219, 0.5);
+}
+
+
 .allPlayerWrapper .title {
   
   margin-top: -70px;
-  margin-left:30px;
+ 
   position: absolute;
   font-size: 1.8rem;
 }
@@ -615,7 +649,14 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 50%;
+}
+
+.secondSample, .fourthSample {
+  margin-left: -8%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 
@@ -623,8 +664,9 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 .SampleList {
   display: flex;
   flex-direction: row;
-  margin-top: 4%;
+  margin-top: -4%;
   margin-left: 5%;
+  width:100%;
 }
 
 .SampleList .titleList, .attributeList  {
@@ -651,10 +693,17 @@ a:active { text-decoration: none; -moz-osx-font-smoothing: grayscale;
 }
 
 .lerneckeTitel{
-margin: 0;
-padding: 0;
+width: 33%;  
+padding: 0 auto;
+font-size: 35px;
 
 }
+
+.lerneckeTitel h2{
+ font-weight: 400;
+ font-size: 35px;
+  
+  }
 
 .lerneckeMain h1{
 
@@ -683,6 +732,67 @@ text-align: center;
 .allPlayerWrapper {
 display: block;
 
+}
+
+/* || Musiktheorie Layout */
+
+.theorieContainer {
+display: flex;
+flex-direction: row;
+}
+
+.theorieImages {
+  width:50%;
+}
+
+.klaviatur {
+  width:50%;
+}
+
+.klaviatur img {
+  padding-left: 7%;
+  
+  width:87%;
+}
+
+
+
+.theorieImages {
+  padding-left: 3%;
+  padding-right: 0%;
+  padding-top: 5%;
+}
+
+.taktart {
+  padding-top: 10%;
+}
+
+.taktart img, .tonart img {
+  width:100%;
+}
+
+.theorieTitle {
+  display: flex;
+  flex-direction: row;
+  padding-left:2%;
+  padding-bottom: 1.5%;
+  font-size: 25px;
+}
+
+.klaviaturTitle {
+  font-size: 25px;
+  padding-top: 14%;
+  padding-left:7%;
+  padding-bottom: 4%;
+
+}
+
+.titleDesc {
+  display: flex;
+  flex-direction: row;
+  font-weight: 450;
+  padding-left: 1.5%;
+  width: 100%;
 }
 
 

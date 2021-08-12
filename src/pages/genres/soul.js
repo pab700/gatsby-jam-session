@@ -131,7 +131,7 @@ const SoulPage = () => (
           <div className="PlayerBlack">
         
         <AudioPlayer
-          src={sample}
+          src={chords}
           loop={true}
           volume={0.35}
           showFilledVolume={true}
@@ -162,7 +162,7 @@ const SoulPage = () => (
 
          <div className="PlayerSoul">
         <AudioPlayer
-          src={guitar}
+          src={sample}
           loop={true}
           volume={0.35}
           showFilledVolume={true}
